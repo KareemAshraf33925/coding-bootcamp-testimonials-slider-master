@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+:root{
+    --DarkBlue: hsl(240, 38%, 20%);
+    --GrayishBlue: hsl(240, 18%, 77%);
+}
+main .container .testmonal{
+    position: relative;
+}
+main .container .testmonal .bg-lft{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px 50px 50px 200px;
+}
+main .container .testmonal .bg-lft .pattern-bg{
+    width: 600px;
+}
+main .container .testmonal .slides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 150px;
+}
+main .container .testmonal .slides .information{
+    position: absolute;
+    top: 300px;
+    z-index: 1;
+}
+main .container .testmonal .slides .information .paragraph{
+    font-size: 32px;
+    font-family:"Inter";
+    font-weight: 400;
+    margin: 0 450px 20px 0;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: var(--DarkBlue);
+    opacity: 0.6;
+    transition: all 0.6s;
+}
+main .container .testmonal .slides .information .name{
+    display: inline-block;
+    font-family:"Inter";
+    font-weight: 700;
+    color: var(--DarkBlue);
+    margin-top: 30px;
+    transition: all 0.6s;
+}
+main .container .testmonal .slides .information .role{
+    display: inline-block;
+    font-family:"Inter";
+    font-weight: 500;
+    color: var(--GrayishBlue);
+    margin-top: 30px;
+    transition: all 0.6s;
+}
+main .container .testmonal .slides .images{
+    position: absolute;
+    top: 55px;
+    right:130px;
+    z-index: 0;
+}
+main .container .testmonal .slides .images .img{
+    width: 450px;
+    box-shadow: 0 0 10px 0px var(--GrayishBlue);
+    transition: all 0.6s;
+}
+main .container .testmonal .controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    top: 80%;
+    right: 33%;
+    z-index: 4;
+}
+main .container .testmonal .controls .prev{
+    display: block;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color:#fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+main .container .testmonal  .controls .prev .icon-prev{
+    cursor: pointer;
+}
+main .container .testmonal .controls .next{
+    display: block;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color:#fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+main .container .testmonal .slides .images .controls .next .icon-next{
+    cursor: pointer;
+}
+@media(max-width:1024px){
+    main .container .testmonal .bg-lft .pattern-bg {
+        width: 500px;
+      }
+      main .container .testmonal .slides .images .img {
+        width: 360px;
+      }
+      main .container .testmonal .controls {
+        top: 75%;
+      }
+      main .container .testmonal .slides .information {
+        top: 260px;
+      }
+      main .container .testmonal .slides .information .paragraph {
+        font-size: 20px;
+        margin: 0 324px 20px 0;
+      }
+}
+@media(max-width:768px){
+    main .container .testmonal .bg-lft .pattern-bg {
+        width: 430px;
+      }
+      main .container .testmonal .slides .images {
+        top: 39px;
+        right: 28px;
+      }
+      main .container .testmonal .slides .images .img {
+        width: 370px;
+        height: 501px;
+      }
+      main .container .testmonal .controls {
+        top: 114%;
+      }
+      main .container .testmonal .slides .information .paragraph {
+        margin: 0 180px 20px 0;
+      }
+}
+@media(max-width:480px){
+    main .container .testmonal .bg-lft {
+        flex-direction: column-reverse;
+        margin: 30px 50px 50px 86px;
+      }
+      main .container .testmonal .slides .images .img {
+        height: 332px;
+      }
+      main .container .testmonal .controls {
+        top: 64%;
+      }
+      main .container .testmonal .slides {
+        flex-direction: column-reverse;
+      }
+      main .container .testmonal .slides .information .paragraph {
+        margin: 191px 0 0px 0;
+        text-align: center;
+      }
+      main .container .testmonal .slides .information .name {
+        margin-left: 100px;
+        text-align: center;
+      }
+      main .container .testmonal .slides .information .role {
+        display: block;
+        margin-top: 5px;
+        margin-left: 0px;
+        text-align: center;
+      }
+}
+@media(max-width:375px){
+    main .container .testmonal .bg-lft .pattern-bg {
+        width: 325px;
+      }
+      main .container .testmonal .bg-lft {
+        gap: 45px;
+      }
+      main .container .testmonal .slides .images .img {
+        height: 242px;
+        width: 282px;
+      }
+      main .container .testmonal .controls {
+        top: 53%;
+      }
+      main .container .testmonal .slides .information .paragraph {
+        margin: 134px 0 0px 0;
+        width: 360px;
+      }
+      main .container .testmonal .slides .information .name {
+        margin-left: 115px;
+        
+      }
+    }
+@media(max-width:320px){
+    main .container .testmonal .bg-lft .pattern-bg {
+        width: 277px;
+      }
+      main .container .testmonal .slides .images .img {
+        height: 199px;
+        width: 222px;
+      }
+      main .container .testmonal .controls {
+        top: 48%;
+      }
+      main .container .testmonal .slides .information .paragraph {
+        margin: 93px 0 0px 0;
+        width: 300px;
+      }
+      main .container .testmonal .slides .information .name {
+        margin-left: 98px;
+      }
+}
+@media(max-width:240px){
+    main .container .testmonal .bg-lft .pattern-bg {
+        width: 200px;
+      }
+      main .container .testmonal .slides .images .img {
+        height: 136px;
+        width: 161px;
+      }
+      main .container .testmonal .controls {
+        top: 42%;
+      }
+      main .container .testmonal .controls .prev {
+        padding: 5px 10px;
+      }
+      main .container .testmonal .controls .next {
+        padding: 5px 10px;
+      }
+      main .container .testmonal .slides .information .paragraph {
+        margin: 31px 68px 0px 0;
+        width: 220px;
+      }
+      main .container .testmonal .slides .information .name {
+        margin-left: 65px;
+      }
+      main .container .testmonal .slides .information .role {
+        margin-right: 55px;
+      }
+}
